@@ -1,8 +1,8 @@
 ## My Favorite Restaurant
 
 ####Overview
-Add your favorite restaurant
-
+We all use Yelp and love to eat good food.
+Share one of your fave places; beacuse you care!
 
 ###Technologies Used:
 * Jquery
