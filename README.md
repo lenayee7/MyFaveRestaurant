@@ -3,13 +3,16 @@
 ####Overview
 Add your favorite restaurant
 
-####Technologies Used
-*Bootstrap
-*JavaScript
-*Angular
-*Firebase
-*HTML5/CSS
-*Github
+
+###Technologies Used:
+* Jquery
+* Javascript
+* HTML
+* CSS
+* Firebase
+* Angular
+* Bootstrap
+* Github
 
 ####Unsolved Problems
  How to edit & delete on showpage
