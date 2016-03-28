@@ -1,19 +1,20 @@
-#### myFavoriteRestaurant
+## My Favorite Restaurant
 
-###Overview
+####Overview
 Add your favorite restaurant
 
-###Technologies Used
-Bootstrap
+####Technologies Used
+* Bootstrap
 JavaScript
 Angular
 Firebase
 HTML5/CSS
 Github
 
-###Unsolved Problems
+####Unsolved Problems
 1. How to edit & delete on showpage
 
-###Contributions
+####Contributions
 1. Create an issue
+
 
