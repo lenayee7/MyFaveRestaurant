@@ -1,33 +1,51 @@
 body {
+	background-image: url("https://s-media-cache-ak0.pinimg.com/736x/4e/b8/97/4eb897ea1f550e323993e70042d823e5.jpg");
 	background-color: gray;
 	font-family: 'Titillium Web', sans-serif;
 }
+html, body {
+    height: 100%;
+}
+/*///////RESTAURANT INDEX//////*/
+
+#search {
+	width: 400px;
+	margin: 0 auto;
+}
+
 a {
 	color: black;
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 
 a:hover {
-	color: yellow;
-}
-.restIndex {
-	font-size: 1.5em;
-	color: purple;
+	font-size: 1.4em;
+	color: #AD0707;
 }
 
 h1 {
 	font-family: 'Titillium Web', sans-serif;
 }
 
-.navbar {
-	background-color: white;
+#home_link {
+	font-size: 2em;
+	padding-top: 2%;
+	color: #AD0707;
 }
-#restauraunts_div {
-	padding-top: 5%;
+
+.navbar {
+  padding-top: 1%;
+  margin-bottom: 2%;
+	background-color: black;
+}
+
+#restaurant_div {
+	margin-top: 4%;
 }
 
 #addBtn {
-	padding: 0.5% 12%;
+	padding: 0.7% 12%;
+	font-size: 1.5em;
 }
 
 .btn {
@@ -35,10 +53,102 @@ h1 {
 	color: #AB1336;
 }
 
-.btn-default {
+.table {
+	border-radius: 10px;
+	background-color: white;
+	width: 70%;
+	margin: 2% auto 10% auto ;
+	padding-bottom: 8;
+}
 
+tr {
+	width: 60%;
+}
+
+th {
+	color: #AD0707;
+	font-size: 1.7em;
+	font-weight: bold;
+	text-align: center;
+}
+
+td {
+	font-size: 1.2em;
+}
+
+.sub_head {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+.delete_btn {
+	color: #AD0707;
+	/*background-color: red;*/
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+}
+
+/*///////RESTAURANT SHOW PAGE//////*/
+
+.yelp_div{
+	margin-top: 8%;
 }
 
 .yelp {
-	width: 4%;
+	width: 9%;
 }
+
+.photo {
+	padding-top: 2%;
+	width: 60%;
+}
+
+.yelp:hover {
+	width: 10%;
+	color: gray;
+}
+
+p {
+	font-size: 1.4em;
+}
+
+.rest_show {
+	background-color: #DBD9DE;
+/*	margin-bottom: 4%;*/
+	margin: 8% auto 7% auto;
+	width: 50%;
+	/*border: 1px solid black;*/
+	border-radius: 10px;
+}
+
+.rest_content {
+	padding: 5%;
+}
+
+footer {
+	background-color: black;
+	padding:1%;
+}
+
+#yelp_footer {
+	text-align: center;
+	width: 10%;
+}
+
+#yelp_footer:hover {
+	width: 12%;
+}
+
+
+
+
+
+
+

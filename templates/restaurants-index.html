@@ -15,17 +15,49 @@
       <input type="text" ng-model="restaurant.yelpUrl" class="form-control" placeholder="Yelp url" required>
     </div>
     <div class="form-group">
-      <input type="text" ng-model="restaurant.imageUrl" class="form-control" placeholder="Image url" required>
+      <input type="text" ng-model="restaurant.photo" class="form-control" placeholder="Photo url" required>
     </div>
     <button id="addBtn" type="submit"class="btn btn-default">Add Restaurant</button>
   </form>
 
-
+<!-- 
   <div id="restaurants_div"class="restaurants" ng-repeat="restaurant in restaurants">
     <a href="#/restaurants/{{restaurant.$id}}" class="restIndex">Name: {{restaurant.name}} - Cuisine: {{restaurant.cuisine}}</a>
  
     <button ng-click="restaurants.$remove(restaurant)">x</button>
   </div>
+</div> -->
+<div id="search">
+  <h3>Search: <input class="form-control" ng-model="query"></h3>
+  Sort by:
+  <select ng-model="orderProp">
+    <option value="name">Alphabetical</option>
+    <option value="age">Newest</option>
+  </select>
+
+</div>
+
+<div id="restaurant_div">
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="sub_head">Restaurant Name</th>
+        <th class="sub_head">Cuisine</th>
+        <th class="sub_head">Location</th>
+    <!--     <th>Image Url</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="restaurants" ng-repeat="restaurant in restaurants | filter:query | orderBy:orderProp">
+        <td class="link"><a href="#/restaurants/{{restaurant.$id}}">{{restaurant.name}}</a></td>
+        <td>{{restaurant.cuisine}}</td>
+        <td>{{restaurant.location}}</td>
+      <!--   <td><img ng-src="{{restaurant.picture}}" width='40px'></td> -->
+        <td><span ng-click="restaurants.$remove(restaurant)" class="glyphicon glyphicon-trash delete_btn"></span></td>
+      </tr>
+    </tbody>
+      
+  </table>
 </div>
  <!--  <h3>Add a New Food</h3>
   <form ng-submit="addRestaurant()">

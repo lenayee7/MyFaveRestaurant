@@ -1,20 +1,21 @@
-<div class="container text-center">
+<div class="rest_show text-center">
+	<div class="rest_content">
+		<h1>{{restaurant.name}}</h1>
 
-<h1>{{restaurant.name}}</h1>
-
-<p>{{restaurant.cuisine}}</p>
-<p>{{restaurant.location}}</p>
-<img ng-src"{{restaurant.imageUrl}}">
-<span> Yelp Link: </span>
-<a href="{{restaurant.yelpUrl}}"> <img class="yelp" src="http://www.shadeshacklajolla.com/images/yelp-icon.png"></a>
-
+		<p>{{restaurant.cuisine}}</p>
+		<p>{{restaurant.location}}</p>
+		<img src="{{restaurant.photo}}" alt="image of {{restaurant.name}}" class="photo">
+		<div class="yelp_div">
+			<a href="{{restaurant.yelpUrl}}" target="_blank">Click Me<img class="yelp"  src="http://www.shadeshacklajolla.com/images/yelp-icon.png"></a>
+		</div>
+	</div>
 </div>
 
-<!-- <div>
-<h4>Edit Me</h4>
-<input ng-model="restaurant.name" ng-change="restaurants.$save(restaurant)" /><br>
-<input ng-model="restaurant.cuisine" ng-change="restaurants.$save(restaurant)"/>
-<button ng-click="restaurants.$save(restaurant)">save</button>
+<!-- <div class="text-center">
+	<h4>Edit Me</h4>
+	<input ng-model="restaurant.name" ng-change="restaurants.$save(restaurant)" /><br>
+	<input ng-model="restaurant.cuisine" ng-change="restaurants.$save(restaurant)"/>
+	<button ng-click="restaurants.update(restaurant)">save</button>
 </div> -->
 
 <!-- <button ng-click="restaurants.$remove(restaurant)">Ate</button>

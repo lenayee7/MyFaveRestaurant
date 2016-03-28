@@ -28,10 +28,11 @@
 	<title>myFaveRestaurant</title>
 </head>
 <body>
-		<nav class="navbar">
+	
+		<nav class="navbar text-center">
 		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <a href="#/restaurats">Restaurants
+		    <div class="navbar">
+		      <a id="home_link" href="#/restaurants">Restaurants
 		      </a>
 		    </div>
 		  </div>
@@ -39,5 +40,10 @@
 
 	<div ui-view></div>
 
+		<footer class="text-center">
+			<a  href="http://www.yelp.com/c/sf/restaurants" target="_blank"><img id="yelp_footer"src="http://s3-media2.fl.yelpcdn.com/assets/srv0/www_pages/ebeb7fcf7307/assets/img/brand_guidelines/yelp-2c-outline.png"></a>
+			<p>copyright</p>
+		</footer>
+	
 </body>
 </html>

@@ -10,6 +10,7 @@ RestaurantsCtrl.controller('restaurantsIndexCtrl', ['$scope', '$firebaseArray',
 
 	  // create a synchronized array to store a collection
 	  $scope.restaurants = $firebaseArray(ref);
+	  $scope.orderProp = 'age';
 
 	  $scope.addRestaurant = function() {
 	    $scope.restaurants.$add({
@@ -17,7 +18,7 @@ RestaurantsCtrl.controller('restaurantsIndexCtrl', ['$scope', '$firebaseArray',
 	      cuisine: $scope.restaurant.cuisine,
 	      location: $scope.restaurant.location,
 	      yelpUrl: $scope.restaurant.yelpUrl,
-	      imageUrl: $scope.restaurant.imageUrl
+	      photo: $scope.restaurant.photo
 	    });
 	    console.log($scope.restaurants)
 	    // clears form
@@ -32,7 +33,7 @@ RestaurantsCtrl.controller('restaurantsShowCtrl', ['$scope', '$stateParams', '$f
   	// console.log("hello",  $stateParams)
    var ref = new Firebase("https://myfaverestaurant.firebaseio.com/restaurants");
  	$scope.restaurants = $firebaseArray(ref);
- 	// log
+ 	
    ref.on("child_added", function(snapshot) {
 
 	  	var restaurant = snapshot.val();
@@ -44,8 +45,8 @@ RestaurantsCtrl.controller('restaurantsShowCtrl', ['$scope', '$stateParams', '$f
 		  			name: restaurant.name,
 		  			cuisine: restaurant.cuisine,
 		  			location: restaurant.location,
-		  			imageUrl: restaurant.imageUrl,
-		  			yelpUrl: restaurant.yelpUrl
+		  			yelpUrl: restaurant.yelpUrl,
+		  			photo: restaurant.photo
 		  		}
 		  	console.log('RESTAURANT', $scope.restaurant);
 		  }
