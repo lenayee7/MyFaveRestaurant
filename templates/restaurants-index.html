@@ -1,0 +1,37 @@
+<h3>Restaurants</h3>
+
+  <div class="restaurants" ng-repeat="restaurant in restaurants">
+  	<a href="#/restaurants/{{restaurant.id}}">Name: {{restaurant.name}} - Cuisine: {{restaurant.cuisine}}</a>
+<!--     <input ng-model="restaurant.name" ng-change="restaurants.$save(restaurant)" />
+     <b>Cuisine</b>
+    <input ng-model="restaurant.cuisine" ng-change="restaurants.$save(restaurant)" /> -->
+    <button ng-click="restaurants.$remove(restaurant)">Ate</button>
+  </div>
+
+  <h3>Add a New Food</h3>
+  <form ng-submit="addRestaurant()">
+    <input placeholder="name" ng-model="restaurant.name">
+    <input placeholder="cuisine" ng-model="restaurant.cuisine">
+    <button type="submit">Add Restaurant</button>
+  </form>
+</div>
+<!-- <hr> -->
+  <!-- form to create new book -->
+<!--   <h4>Add New Restaurant</h4>
+  <form ng-submit="rest.createRest()">
+    <div class="form-group">
+      <input type="text" ng-model="bc.newBook.title" class="form-control" placeholder="Title" autofocus>
+    </div>
+    <div class="form-group">
+      <input type="text" ng-model="bc.newBook.author" class="form-control" placeholder="Author">
+    </div>
+    <div class="form-group">
+      <input type="text" ng-model="bc.newBook.image" class="form-control" placeholder="Image">
+    </div>
+    <div class="form-group">
+      <input type="text" ng-model="bc.newBook.releaseDate" class="form-control" placeholder="Release Date">
+    </div>
+    <input type="submit" value="Save Restaurant" class="btn btn-default">
+  </form>
+
+<hr> -->
