@@ -2,9 +2,11 @@
 	<div class="rest_content">
 		<h1>{{restaurant.name}}</h1>
 
-		<p>{{restaurant.cuisine}}</p>
-		<p>{{restaurant.location}}</p>
+		<p class="bold_p">{{restaurant.cuisine}}</p>
+		<p class="bold_p">{{restaurant.location}}</p>
+		
 		<img src="{{restaurant.photo}}" alt="image of {{restaurant.name}}" class="photo">
+		<p class="review_p"><span class="bold_p">My Review:</span><br>{{restaurant.review}}</p>
 		<div class="yelp_div">
 			<a href="{{restaurant.yelpUrl}}" target="_blank">Click Me<img class="yelp"  src="http://www.shadeshacklajolla.com/images/yelp-icon.png"></a>
 		</div>

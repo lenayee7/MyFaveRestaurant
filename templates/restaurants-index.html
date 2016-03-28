@@ -1,63 +1,57 @@
 <div class="container text-center">
-  <h1>Favorite Restaurants</h1>
+  <h1>My Favorite Restaurants</h1>
+  <p id="food_exerpt">We all use Yelp and love to eat good food.<br>Reviews are great to have, but sometimes we just want someone we know to vouch for a cool place to eat. Share one of your fave places; beacuse you care!</p>
   <hr>
   <form ng-submit="addRestaurant()">
     <div class="form-group">
       <input type="text" ng-model="restaurant.name" class="form-control" placeholder="Restaurant Name" autofocus required>
     </div>
     <div class="form-group">
-      <input type="text" ng-model="restaurant.cuisine" class="form-control" placeholder="Cuisine" required>
+      <input type="text" ng-model="restaurant.cuisine" class="form-control" placeholder="Cuisine" >
     </div>
     <div class="form-group">
-      <input type="text" ng-model="restaurant.location" class="form-control" placeholder="City, State" required>
+      <input type="text" ng-model="restaurant.location" class="form-control" placeholder="City, State" >
     </div>
     <div class="form-group">
-      <input type="text" ng-model="restaurant.yelpUrl" class="form-control" placeholder="Yelp url" required>
+      <input type="text" ng-model="restaurant.yelpUrl" class="form-control" placeholder="Yelp url" >
     </div>
     <div class="form-group">
-      <input type="text" ng-model="restaurant.photo" class="form-control" placeholder="Photo url" required>
+      <input type="text" ng-model="restaurant.photo" class="form-control" placeholder="Photo url" >
+    </div>
+    <div class="form-group">
+      <input type="text" ng-model="restaurant.review" class="form-control" placeholder="My Review" >
     </div>
     <button id="addBtn" type="submit"class="btn btn-default">Add Restaurant</button>
   </form>
 
-<!-- 
-  <div id="restaurants_div"class="restaurants" ng-repeat="restaurant in restaurants">
-    <a href="#/restaurants/{{restaurant.$id}}" class="restIndex">Name: {{restaurant.name}} - Cuisine: {{restaurant.cuisine}}</a>
- 
-    <button ng-click="restaurants.$remove(restaurant)">x</button>
+  <div id="search">
+    <h3 id="search_h3">Search:<input class="form-control" placeholder="Search by location, name, cuisine" ng-model="query"></h3>
+    <p>Sort by:</p>
+    <select ng-model="orderProp">
+      <option value="name">Alphabetical</option>
+      <option value="age">Newest</option>
+    </select>
   </div>
-</div> -->
-<div id="search">
-  <h3>Search: <input class="form-control" ng-model="query"></h3>
-  Sort by:
-  <select ng-model="orderProp">
-    <option value="name">Alphabetical</option>
-    <option value="age">Newest</option>
-  </select>
 
-</div>
-
-<div id="restaurant_div">
-  <table class="table">
-    <thead>
-      <tr>
-        <th class="sub_head">Restaurant Name</th>
-        <th class="sub_head">Cuisine</th>
-        <th class="sub_head">Location</th>
-    <!--     <th>Image Url</th> -->
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="restaurants" ng-repeat="restaurant in restaurants | filter:query | orderBy:orderProp">
-        <td class="link"><a href="#/restaurants/{{restaurant.$id}}">{{restaurant.name}}</a></td>
-        <td>{{restaurant.cuisine}}</td>
-        <td>{{restaurant.location}}</td>
-      <!--   <td><img ng-src="{{restaurant.picture}}" width='40px'></td> -->
-        <td><span ng-click="restaurants.$remove(restaurant)" class="glyphicon glyphicon-trash delete_btn"></span></td>
-      </tr>
-    </tbody>
-      
-  </table>
+  <div class= "form-group"id="restaurant_div">
+    <table class="table ">
+      <thead>
+        <tr>
+          <th class="sub_head">Restaurant Name</th>
+          <th class="sub_head">Cuisine</th>
+          <th class="sub_head">Location</th>
+      </thead>
+      <tbody>
+        <tr class="restaurants" ng-repeat="restaurant in restaurants | filter:query | orderBy:orderProp">
+          <td class="link"><a href="#/restaurants/{{restaurant.$id}}">{{restaurant.name}}</a></td>
+          <td>{{restaurant.cuisine}}</td>
+          <td>{{restaurant.location}}</td>
+        <!--   <td><img ng-src="{{restaurant.picture}}" width='40px'></td> -->
+          <td><span ng-click="restaurants.$remove(restaurant)" class="glyphicon glyphicon-trash delete_btn"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
  <!--  <h3>Add a New Food</h3>
   <form ng-submit="addRestaurant()">

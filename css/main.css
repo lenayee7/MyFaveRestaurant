@@ -13,6 +13,11 @@ html, body {
 	margin: 0 auto;
 }
 
+#search_h3 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
 a {
 	color: black;
 	font-size: 1.5em;
@@ -24,10 +29,19 @@ a:hover {
 }
 
 h1 {
-	font-family: 'Titillium Web', sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#food_exerpt {
+	font-size: 1.2em;
+	margin: 0 auto;
+	width: 50%;
 }
 
 #home_link {
+	font-weight: bold;
 	font-size: 2em;
 	padding-top: 2%;
 	color: #AD0707;
@@ -37,10 +51,6 @@ h1 {
   padding-top: 1%;
   margin-bottom: 2%;
 	background-color: black;
-}
-
-#restaurant_div {
-	margin-top: 4%;
 }
 
 #addBtn {
@@ -53,12 +63,16 @@ h1 {
 	color: #AB1336;
 }
 
+#restaurant_div {
+	margin-top: 4%;
+}
+
 .table {
 	border-radius: 10px;
 	background-color: white;
-	width: 70%;
-	margin: 2% auto 10% auto ;
-	padding-bottom: 8;
+	width: 100%;
+	margin: 0 auto ;
+	padding
 }
 
 tr {
@@ -106,7 +120,7 @@ h2 {
 }
 
 .photo {
-	padding-top: 2%;
+	padding: 2% 0;
 	width: 60%;
 }
 
@@ -115,9 +129,23 @@ h2 {
 	color: gray;
 }
 
-p {
-	font-size: 1.4em;
+.bold_p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 1.2em;
 }
+
+span.bold_p {
+	padding-top: 4%;
+}
+
+.review_p {
+	margin-top: 1%;
+	font-size: 1.3em;
+	width: 50%;
+	margin: 0 auto;
+}
+
 
 .rest_show {
 	background-color: #DBD9DE;
@@ -135,6 +163,7 @@ p {
 footer {
 	background-color: black;
 	padding:1%;
+	margin-top: 7%;
 }
 
 #yelp_footer {

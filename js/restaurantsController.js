@@ -18,7 +18,8 @@ RestaurantsCtrl.controller('restaurantsIndexCtrl', ['$scope', '$firebaseArray',
 	      cuisine: $scope.restaurant.cuisine,
 	      location: $scope.restaurant.location,
 	      yelpUrl: $scope.restaurant.yelpUrl,
-	      photo: $scope.restaurant.photo
+	      photo: $scope.restaurant.photo,
+	      review: $scope.restaurant.review
 	    });
 	    console.log($scope.restaurants)
 	    // clears form
@@ -46,7 +47,8 @@ RestaurantsCtrl.controller('restaurantsShowCtrl', ['$scope', '$stateParams', '$f
 		  			cuisine: restaurant.cuisine,
 		  			location: restaurant.location,
 		  			yelpUrl: restaurant.yelpUrl,
-		  			photo: restaurant.photo
+		  			photo: restaurant.photo,
+		  			review: restaurant.review
 		  		}
 		  	console.log('RESTAURANT', $scope.restaurant);
 		  }
