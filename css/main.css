@@ -1,0 +1,44 @@
+body {
+	background-color: gray;
+	font-family: 'Titillium Web', sans-serif;
+}
+a {
+	color: black;
+	font-size: 1.4em;
+}
+
+a:hover {
+	color: yellow;
+}
+.restIndex {
+	font-size: 1.5em;
+	color: purple;
+}
+
+h1 {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar {
+	background-color: white;
+}
+#restauraunts_div {
+	padding-top: 5%;
+}
+
+#addBtn {
+	padding: 0.5% 12%;
+}
+
+.btn {
+	background-color: black;
+	color: #AB1336;
+}
+
+.btn-default {
+
+}
+
+.yelp {
+	width: 4%;
+}

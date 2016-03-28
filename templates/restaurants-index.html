@@ -1,37 +1,38 @@
-<h3>Restaurants</h3>
+<div class="container text-center">
+  <h1>Favorite Restaurants</h1>
+  <hr>
+  <form ng-submit="addRestaurant()">
+    <div class="form-group">
+      <input type="text" ng-model="restaurant.name" class="form-control" placeholder="Restaurant Name" autofocus required>
+    </div>
+    <div class="form-group">
+      <input type="text" ng-model="restaurant.cuisine" class="form-control" placeholder="Cuisine" required>
+    </div>
+    <div class="form-group">
+      <input type="text" ng-model="restaurant.location" class="form-control" placeholder="City, State" required>
+    </div>
+    <div class="form-group">
+      <input type="text" ng-model="restaurant.yelpUrl" class="form-control" placeholder="Yelp url" required>
+    </div>
+    <div class="form-group">
+      <input type="text" ng-model="restaurant.imageUrl" class="form-control" placeholder="Image url" required>
+    </div>
+    <button id="addBtn" type="submit"class="btn btn-default">Add Restaurant</button>
+  </form>
 
-  <div class="restaurants" ng-repeat="restaurant in restaurants">
-  	<a href="#/restaurants/{{restaurant.id}}">Name: {{restaurant.name}} - Cuisine: {{restaurant.cuisine}}</a>
-<!--     <input ng-model="restaurant.name" ng-change="restaurants.$save(restaurant)" />
-     <b>Cuisine</b>
-    <input ng-model="restaurant.cuisine" ng-change="restaurants.$save(restaurant)" /> -->
-    <button ng-click="restaurants.$remove(restaurant)">Ate</button>
+
+  <div id="restaurants_div"class="restaurants" ng-repeat="restaurant in restaurants">
+    <a href="#/restaurants/{{restaurant.$id}}" class="restIndex">Name: {{restaurant.name}} - Cuisine: {{restaurant.cuisine}}</a>
+ 
+    <button ng-click="restaurants.$remove(restaurant)">x</button>
   </div>
-
-  <h3>Add a New Food</h3>
+</div>
+ <!--  <h3>Add a New Food</h3>
   <form ng-submit="addRestaurant()">
     <input placeholder="name" ng-model="restaurant.name">
     <input placeholder="cuisine" ng-model="restaurant.cuisine">
+     <input placeholder="location" ng-model="restaurant.location">
+      <input placeholder="yelpUrl" ng-model="restaurant.yelpUrl">
     <button type="submit">Add Restaurant</button>
-  </form>
-</div>
-<!-- <hr> -->
-  <!-- form to create new book -->
-<!--   <h4>Add New Restaurant</h4>
-  <form ng-submit="rest.createRest()">
-    <div class="form-group">
-      <input type="text" ng-model="bc.newBook.title" class="form-control" placeholder="Title" autofocus>
-    </div>
-    <div class="form-group">
-      <input type="text" ng-model="bc.newBook.author" class="form-control" placeholder="Author">
-    </div>
-    <div class="form-group">
-      <input type="text" ng-model="bc.newBook.image" class="form-control" placeholder="Image">
-    </div>
-    <div class="form-group">
-      <input type="text" ng-model="bc.newBook.releaseDate" class="form-control" placeholder="Release Date">
-    </div>
-    <input type="submit" value="Save Restaurant" class="btn btn-default">
-  </form>
+  </form> -->
 
-<hr> -->

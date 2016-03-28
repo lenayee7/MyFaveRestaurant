@@ -1,1 +1,29 @@
-restaurants-show.html
+<div class="container text-center">
+
+<h1>{{restaurant.name}}</h1>
+
+<p>{{restaurant.cuisine}}</p>
+<p>{{restaurant.location}}</p>
+<img ng-src"{{restaurant.imageUrl}}">
+<span> Yelp Link: </span>
+<a href="{{restaurant.yelpUrl}}"> <img class="yelp" src="http://www.shadeshacklajolla.com/images/yelp-icon.png"></a>
+
+</div>
+
+<!-- <div>
+<h4>Edit Me</h4>
+<input ng-model="restaurant.name" ng-change="restaurants.$save(restaurant)" /><br>
+<input ng-model="restaurant.cuisine" ng-change="restaurants.$save(restaurant)"/>
+<button ng-click="restaurants.$save(restaurant)">save</button>
+</div> -->
+
+<!-- <button ng-click="restaurants.$remove(restaurant)">Ate</button>
+ --><!-- <ul class="restaurant-thumbs">
+  <li ng-repeat="img in restaurant.images">
+    <img ng-src="{{img}}" ng-click="setImage(img)">
+  </li>
+</ul> -->
+
+<!-- <h2>{{restaurant.name}} </h2>
+<h2>{{restaurant.cuisine}} </h2>
+ -->
