@@ -1,8 +1,9 @@
 ## My Favorite Restaurant
+A Rapid Prototype using a Firebase database & Angular on the frontend.
 
 ####Overview
 We all use Yelp and love to eat good food.
-Share one of your fave places; beacuse you care!
+Share one of your fave places by adding your favorite restaurant; beacause you care!
 
 ![alt tag](public/images/myfaverest.png)
 
@@ -16,8 +17,9 @@ Share one of your fave places; beacuse you care!
 * Bootstrap
 * Github
 
-####Unsolved Problems
- How to edit & delete on showpage
+####How to Use
+1. Bower Install
+2. Open in Browser or run command "python -m SimpleHTTPServer 8000"
 
 ####Contributions
  Create an issue
