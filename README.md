@@ -18,9 +18,6 @@ Share one of your fave places by adding your favorite restaurant; beacause you c
 ####How to Use
 1. Bower Install
 2. Open in Browser or run command "python -m SimpleHTTPServer 8000"
-3. 
-####Unsolved Problems
- How to edit & delete on showpage
 
 ####Contributions
  Create an issue
