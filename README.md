@@ -5,7 +5,7 @@ A Rapid Prototype using a Firebase database & Angular on the frontend.
 We all use Yelp and love to eat good food.
 Share one of your fave places by adding your favorite restaurant; beacause you care!
 
-![alt tag](public/images/myfaverest.png)
+![alt tag](myfaverest.png)
 
 ###Technologies Used:
 * Jquery
