@@ -37,12 +37,14 @@
     <table class="table ">
       <thead>
         <tr>
+          <th class="sub_head"></th>
           <th class="sub_head">Restaurant Name</th>
           <th class="sub_head">Cuisine</th>
           <th class="sub_head">Location</th>
       </thead>
       <tbody>
         <tr class="restaurants" ng-repeat="restaurant in restaurants | filter:query | orderBy:orderProp">
+          <td class="photo-link"><a href="#/restaurants/{{restaurant.$id}}"><img class="photo-thumb" ng-src="{{restaurant.photo}}"></a></td>
           <td class="link"><a href="#/restaurants/{{restaurant.$id}}">{{restaurant.name}}</a></td>
           <td>{{restaurant.cuisine}}</td>
           <td>{{restaurant.location}}</td>

@@ -29,7 +29,7 @@ a:hover {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 1.9em;
 	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -90,6 +90,16 @@ td {
 	font-size: 1.2em;
 }
 
+.photo-link {
+	max-width: 120px;
+	max-height: 100px;
+}
+
+.photo-thumb {
+	max-width: 120px;
+	max-height: 100px;
+}
+
 .sub_head {
 	font-weight: bold;
 	font-size: 2em;
@@ -121,7 +131,8 @@ h2 {
 
 .photo {
 	padding: 2% 0;
-	width: 60%;
+	width: 70%;
+	max-height: 200px;
 }
 
 .yelp:hover {
@@ -150,7 +161,7 @@ span.bold_p {
 .rest_show {
 	background-color: #DBD9DE;
 /*	margin-bottom: 4%;*/
-	margin: 8% auto 7% auto;
+	margin: 4% auto 7% auto;
 	width: 50%;
 	/*border: 1px solid black;*/
 	border-radius: 10px;
@@ -158,6 +169,8 @@ span.bold_p {
 
 .rest_content {
 	padding: 5%;
+	width: 100%;
+	margin: 0 auto;
 }
 
 footer {
